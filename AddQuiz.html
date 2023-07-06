@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Admin Panel Quiz App</title>
+</head>
+
+<body class="container bg-light">
+    <h1 class="text-center bg-info-subtitle p-3 m-3 rounded text-primary">Add Quiz</h1>
+    <div class="container">
+        <div class="p-2">
+            <textarea name="" placeholder="Add Question" class="p-2 w-100 fs-5 border-0 rounded shadow bg-white"
+                id="question" cols="30" rows="5 "></textarea>
+
+        </div>
+        <div class="p-2">
+            <div>
+                <input type="text" placeholder="Enter option" class="p-2 w-100 fs-5 border-0 rounded shadow bg-white"
+                    id="option">
+                <hr> <button onclick="addOption()" class="btn btn-primary btn-hover">Add</button>
+            </div>
+
+        </div>
+        <div>
+            <ol id="optionsParent"> </ol>
+        </div>
+        <div>
+            <p class="bg-success  text-white p-3" id="correctAnswer">Correct Answer</p>
+        </div>
+        <div><button onclick="submitQuestion()" class="btn btn-primary btn-hover">Submit Question</button></div>
+    </div>
+    </div>
+    <script type="module" src="AddQuiz.js"></script>
+</body>
+
+</html>
